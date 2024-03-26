@@ -1,0 +1,43 @@
+{
+  "name": "velitut",
+  "version": "1.2.2",
+  "description": "Reflection and code generation in TypeScript.",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "gulp tslint && gulp test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "build": "gulp typescript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ErnaBeer/velitut.git"
+  },
+  "keywords": [
+    "typescript",
+    "code",
+    "et"
+  ],
+  "author": "CordieWill",
+  "license": "MIT",
+  "typescript": {
+    "definition": "ts-type-info.d.ts"
+  },
+  "dependencies": {
+    "aliquidlaborum": "^1.1.0",
+    "code-block-writer": "^3.1.0",
+    "tmp": "0.0.28",
+    "typescript": "^1.8.2"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "del": "^2.0.2",
+    "gulp": "^3.9.1",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.2.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^4.3.1",
+    "gulp-typescript": "^2.10.0",
+    "mocha": "^2.3.3",
+    "tslint": "^3.5.0"
+  }
+}
